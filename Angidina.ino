@@ -11,8 +11,8 @@
 
 #define MOTOR_FL 2 // Front left
 #define MOTOR_FR 0 // Front right
-#define MOTOR_BL 1 // back left
-#define MOTOR_BR 3 // back right
+#define MOTOR_BL 1 // Back left
+#define MOTOR_BR 3 // Back right
 
 #define PID_PITCH_RATE 0
 #define PID_ROLL_RATE 1
