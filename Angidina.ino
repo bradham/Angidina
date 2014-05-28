@@ -100,9 +100,9 @@ void loop()
   long rcthr, rcyaw, rcpit, rcroll;
   
   rcthr = channels[2];
-  rcyaw = map(channels[3], 1068, 1915, -150, 150);
-  rcpit = map(channels[1], 1077, 1915, -45, 45);
-  rcroll = map(channels[0], 1090, 1913, -45, 45);
+  rcyaw = map(channels[0], 1037, 1863, -150, 150);
+  rcpit = map(channels[1], 1059, 1866, -45, 45);
+  rcroll = map(channels[3], 1054, 1889, -45, 45);
   
   if (loopCount % printMod == 0) {
     hal.console->printf_P(PSTR("individual read THR %d YAW %d PIT %d ROLL %d\r\n"), rcthr, rcyaw, rcpit, rcroll);
