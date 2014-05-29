@@ -80,8 +80,10 @@ void loop()
   
   float roll, pitch, yaw;
  
+ //Get data from the inertial sensor
   ins.quaternion.to_euler(&roll, &pitch, &yaw);
   
+  //Change from Radian values to Degrees
   roll = ToDeg(roll);
   pitch = ToDeg(pitch);
   yaw = ToDeg(yaw);
@@ -115,6 +117,7 @@ void loop()
   
   Vector3f gyro = ins.get_gyro();
   
+  //Convert gyro data from Radians to Degrees
   float gyroPitch = ToDeg(gyro.y);
   float gyroRoll = ToDeg(gyro.x);
   float gyroYaw = ToDeg(gyro.z);
